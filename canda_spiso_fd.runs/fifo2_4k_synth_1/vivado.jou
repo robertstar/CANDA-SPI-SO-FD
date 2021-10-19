@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 19 12:44:26 2021
+# Process ID: 4320
+# Current directory: /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/fifo2_4k_synth_1
+# Command line: vivado -log fifo2_4k.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo2_4k.tcl
+# Log file: /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/fifo2_4k_synth_1/fifo2_4k.vds
+# Journal file: /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/fifo2_4k_synth_1/vivado.jou
+#-----------------------------------------------------------
+source fifo2_4k.tcl -notrace

@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../canda_vhdl.gen/sources_1/ip/ila_1/sim/ila_1.vhd" \
+"../../../../canda_vhdl.gen/sources_1/ip/fifo_4k/fifo_4k_sim_netlist.vhdl" \
+"../../../../canda_vhdl.gen/sources_1/ip/fifo_1k/fifo_1k_sim_netlist.vhdl" \
+"../../../../canda_vhdl.gen/sources_1/ip/tri_mode_ethernet_mac_0/tri_mode_ethernet_mac_0_sim_netlist.vhdl" \
+"../../../../canda_vhdl.gen/sources_1/ip/pll/pll_sim_netlist.vhdl" \
+"../../../../canda_vhdl.srcs/sources_1/new/ad7606.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/arbiter.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/canda.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/crc.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/mdio_cfg.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/rx_packets.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/single_port_ram.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/tx_pkt_25701.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/tx_pkt_arp.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/tx_pkt_icmp.vhd" \
+"../../../../canda_vhdl.srcs/sim_1/new/MII_TX_PKT_tb.vhd" \
+
+# Do not sort compile order
+nosort

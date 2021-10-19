@@ -1,0 +1,5 @@
+xpm_cdc.sv,systemverilog,xpm,../../../2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../canda_vhdl.gen/sources_1/ip/pll"
+xpm_memory.sv,systemverilog,xpm,../../../2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../canda_vhdl.gen/sources_1/ip/pll"
+xpm_VCOMP.vhd,vhdl,xpm,../../../2020.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../canda_vhdl.gen/sources_1/ip/pll"
+pll_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../canda_vhdl.gen/sources_1/ip/pll/pll_sim_netlist.vhdl,incdir="../../../../canda_vhdl.gen/sources_1/ip/pll"
+glbl.v,Verilog,xil_defaultlib,glbl.v

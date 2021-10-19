@@ -1,0 +1,710 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "50000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "ila2_inst",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "54D41D3F93145991A86C81C1B562932D",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "clk_25Mhz",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "mac1_rx_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "mac1_rx_tdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mac1_rx_tdata[7]"
+                                            },
+                                            {
+                                                "name": "mac1_rx_tdata[6]"
+                                            },
+                                            {
+                                                "name": "mac1_rx_tdata[5]"
+                                            },
+                                            {
+                                                "name": "mac1_rx_tdata[4]"
+                                            },
+                                            {
+                                                "name": "mac1_rx_tdata[3]"
+                                            },
+                                            {
+                                                "name": "mac1_rx_tdata[2]"
+                                            },
+                                            {
+                                                "name": "mac1_rx_tdata[1]"
+                                            },
+                                            {
+                                                "name": "mac1_rx_tdata[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "mac1_rx_tlast",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "mac2_rx_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "mac2_rx_tdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mac2_rx_tdata[7]"
+                                            },
+                                            {
+                                                "name": "mac2_rx_tdata[6]"
+                                            },
+                                            {
+                                                "name": "mac2_rx_tdata[5]"
+                                            },
+                                            {
+                                                "name": "mac2_rx_tdata[4]"
+                                            },
+                                            {
+                                                "name": "mac2_rx_tdata[3]"
+                                            },
+                                            {
+                                                "name": "mac2_rx_tdata[2]"
+                                            },
+                                            {
+                                                "name": "mac2_rx_tdata[1]"
+                                            },
+                                            {
+                                                "name": "mac2_rx_tdata[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "mac2_rx_tlast",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "ETH2_RX_25701_WR_CLK",
+                                        "isBus": false,
+                                        "parentNetId": 21
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "ETH2_RX_25701_WR_EN",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "ETH2_RX_25701_WR_DATA",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ETH2_RX_25701_WR_DATA[7]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_WR_DATA[6]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_WR_DATA[5]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_WR_DATA[4]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_WR_DATA[3]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_WR_DATA[2]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_WR_DATA[1]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_WR_DATA[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "FIFO_ETH2_RX_25701_RD_EN",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "FIFO_ETH2_RX_25701_RD_DCNT",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[11]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[10]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[9]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[8]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[7]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[6]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[5]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[4]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[3]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[2]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[1]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DCNT[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "FIFO_ETH2_RX_25701_RD_DOUT",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DOUT[7]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DOUT[6]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DOUT[5]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DOUT[4]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DOUT[3]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DOUT[2]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DOUT[1]"
+                                            },
+                                            {
+                                                "name": "FIFO_ETH2_RX_25701_RD_DOUT[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "FIFO_PKT2_25701_WR_CLK",
+                                        "isBus": false,
+                                        "parentNetId": 52
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe14",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "FIFO_PKT2_25701_WR_EN",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "FIFO_PKT2_25701_WR_DOUT",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[9]"
+                                            },
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[8]"
+                                            },
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[7]"
+                                            },
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[6]"
+                                            },
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[5]"
+                                            },
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[4]"
+                                            },
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[3]"
+                                            },
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[2]"
+                                            },
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[1]"
+                                            },
+                                            {
+                                                "name": "FIFO_PKT2_25701_WR_DOUT[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe16",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 16,
+                                "nets": [
+                                    {
+                                        "name": "ETH2_RX_25701_UDP_CRC",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[15]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[14]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[13]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[12]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[11]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[10]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[9]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[8]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[7]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[6]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[5]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[4]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[3]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[2]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[1]"
+                                            },
+                                            {
+                                                "name": "ETH2_RX_25701_UDP_CRC[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe17",
+                                "id": 17,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 17,
+                                "nets": [
+                                    {
+                                        "name": "PKT_APO_CLR",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe18",
+                                "id": 18,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 18,
+                                "nets": [
+                                    {
+                                        "name": "PKT_APO_DONE",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe19",
+                                "id": 19,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 19,
+                                "nets": [
+                                    {
+                                        "name": "PKT_APO_COMM",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "PKT_APO_COMM[15]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[14]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[13]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[12]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[11]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[10]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[9]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[8]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[7]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[6]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[5]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[4]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[3]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[2]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[1]"
+                                            },
+                                            {
+                                                "name": "PKT_APO_COMM[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 21,
+                        "name": "rx2_proto/rx_mac_clk_BUFG",
+                        "state_reg": [
+                            {
+                                "name": "ETH2_RX/FSM_sequential_rx_state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "eth_hdr",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "ip_hdr",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "arp_hdr",
+                                        "val": "101"
+                                    },
+                                    {
+                                        "name": "udp_hdr",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "pkt25701_data",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "idle",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "wait_end",
+                                        "val": "110"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 52,
+                        "name": "PHY1_TXC_IBUF_BUFG",
+                        "state_reg": [
+                            {
+                                "name": "arb_inst/FSM_sequential_arb_state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "idle",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "st_igp",
+                                        "val": "110"
+                                    },
+                                    {
+                                        "name": "st_s1",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "st_s2",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "st_s3",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "st_s5",
+                                        "val": "101"
+                                    },
+                                    {
+                                        "name": "st_s4",
+                                        "val": "100"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

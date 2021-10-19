@@ -1,0 +1,2 @@
+pll_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../canda_vhdl.gen/sources_1/ip/pll/pll_sim_netlist.vhdl,incdir="../../../../canda_vhdl.gen/sources_1/ip/pll"
+glbl.v,Verilog,xil_defaultlib,glbl.v

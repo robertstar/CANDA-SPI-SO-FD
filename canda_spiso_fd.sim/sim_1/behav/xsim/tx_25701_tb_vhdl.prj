@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../canda_vhdl.srcs/sources_1/new/crc.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/imitator_16ch.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/single_port_ram.vhd" \
+"../../../../canda_vhdl.srcs/sources_1/new/tx_pkt_25701.vhd" \
+"../../../../canda_vhdl.srcs/sim_1/new/tx_25701_tb.vhd" \
+
+# Do not sort compile order
+nosort

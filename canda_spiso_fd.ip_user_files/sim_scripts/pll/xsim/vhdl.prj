@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../canda_vhdl.gen/sources_1/ip/pll/pll_sim_netlist.vhdl" \
+
+nosort

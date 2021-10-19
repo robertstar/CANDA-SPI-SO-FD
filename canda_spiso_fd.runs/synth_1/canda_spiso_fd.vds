@@ -1,0 +1,569 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 19 12:46:41 2021
+# Process ID: 5098
+# Current directory: /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1
+# Command line: vivado -log canda_spiso_fd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source canda_spiso_fd.tcl
+# Log file: /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/canda_spiso_fd.vds
+# Journal file: /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source canda_spiso_fd.tcl -notrace
+Command: synth_design -top canda_spiso_fd -part xc7a35tftg256-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tftg256-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5117
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2338.246 ; gain = 0.000 ; free physical = 4749 ; free virtual = 10841
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'canda_spiso_fd' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:112]
+INFO: [Synth 8-3491] module 'ila_1' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/ila_1_stub.vhdl:5' bound to instance 'ila2_inst' of component 'ila_1' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:693]
+INFO: [Synth 8-638] synthesizing module 'ila_1' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/ila_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'pll' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/pll_stub.vhdl:5' bound to instance 'pll_inst' of component 'pll' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:802]
+INFO: [Synth 8-638] synthesizing module 'pll' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/pll_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'mdio_cfg' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/mdio_cfg.vhd:28' bound to instance 'mdio1' of component 'mdio_cfg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:811]
+INFO: [Synth 8-638] synthesizing module 'mdio_cfg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/mdio_cfg.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'mdio_cfg' (1#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/mdio_cfg.vhd:42]
+INFO: [Synth 8-3491] module 'mdio_cfg' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/mdio_cfg.vhd:28' bound to instance 'mdio2' of component 'mdio_cfg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:825]
+INFO: [Synth 8-3491] module 'MII_RX' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX.vhd:35' bound to instance 'rx1_proto' of component 'MII_RX' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:839]
+INFO: [Synth 8-638] synthesizing module 'MII_RX' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'MII_RX' (2#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX.vhd:49]
+INFO: [Synth 8-3491] module 'rx_packets' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:29' bound to instance 'rx1_pkt' of component 'rx_packets' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:853]
+INFO: [Synth 8-638] synthesizing module 'rx_packets' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:63]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:652]
+WARNING: [Synth 8-614] signal 'IPv4_type' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:291]
+WARNING: [Synth 8-614] signal 'IPv4_IP_src' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:291]
+WARNING: [Synth 8-614] signal 'UDP_DP' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:291]
+WARNING: [Synth 8-614] signal 'UDP_dlen' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:291]
+WARNING: [Synth 8-614] signal 'arp_dst_ip' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:291]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:683]
+INFO: [Synth 8-256] done synthesizing module 'rx_packets' (3#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:63]
+INFO: [Synth 8-3491] module 'MII_RX' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX.vhd:35' bound to instance 'rx2_proto' of component 'MII_RX' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:885]
+INFO: [Synth 8-3491] module 'MII_RX2_PKT' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:28' bound to instance 'ETH2_RX' of component 'MII_RX2_PKT' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:899]
+INFO: [Synth 8-638] synthesizing module 'MII_RX2_PKT' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:65]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:581]
+WARNING: [Synth 8-614] signal 'set_pkt25701' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:309]
+WARNING: [Synth 8-614] signal 'clr_pkt25701' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:309]
+WARNING: [Synth 8-614] signal 'PKT_25701_CLR' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:309]
+WARNING: [Synth 8-614] signal 'PKT_ARP_CLR' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:309]
+WARNING: [Synth 8-614] signal 'IPv4_type' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:309]
+WARNING: [Synth 8-614] signal 'UDP_DP' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:309]
+WARNING: [Synth 8-614] signal 'UDP_dlen' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:309]
+WARNING: [Synth 8-614] signal 'rx_udp_dlen' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:309]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:616]
+INFO: [Synth 8-256] done synthesizing module 'MII_RX2_PKT' (4#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:65]
+WARNING: [Synth 8-5640] Port 'wr_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:582]
+WARNING: [Synth 8-5640] Port 'rd_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:582]
+INFO: [Synth 8-3491] module 'fifo2_4k' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/fifo2_4k_stub.vhdl:5' bound to instance 'FIFO_ETH2_RX_25701' of component 'fifo2_4k' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:933]
+INFO: [Synth 8-638] synthesizing module 'fifo2_4k' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/fifo2_4k_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'tx_pkt2_25701' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt2_25701.vhd:28' bound to instance 'PKT2_25701' of component 'tx_pkt2_25701' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:947]
+INFO: [Synth 8-638] synthesizing module 'tx_pkt2_25701' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt2_25701.vhd:54]
+INFO: [Synth 8-3491] module 'crc' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/crc.vhd:34' bound to instance 'crc_inst' of component 'crc' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt2_25701.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'crc' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/crc.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'crc' (5#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/crc.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'tx_pkt2_25701' (6#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt2_25701.vhd:54]
+WARNING: [Synth 8-5640] Port 'wr_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:566]
+WARNING: [Synth 8-5640] Port 'rd_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:566]
+INFO: [Synth 8-3491] module 'fifo_4k' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/fifo_4k_stub.vhdl:5' bound to instance 'FIFO_PKT2_25701' of component 'fifo_4k' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:973]
+INFO: [Synth 8-638] synthesizing module 'fifo_4k' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/fifo_4k_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'tx_pkt_arp2' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:26' bound to instance 'tx_arp2' of component 'tx_pkt_arp2' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:987]
+INFO: [Synth 8-638] synthesizing module 'tx_pkt_arp2' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:41]
+INFO: [Synth 8-3491] module 'crc' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/crc.vhd:34' bound to instance 'fcs' of component 'crc' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:100]
+WARNING: [Synth 8-614] signal 'PKT_DST_MAC' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:119]
+WARNING: [Synth 8-614] signal 'PKT_SRC_MAC' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:119]
+WARNING: [Synth 8-614] signal 'PKT_ARP_HDR' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:119]
+INFO: [Synth 8-256] done synthesizing module 'tx_pkt_arp2' (7#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:41]
+WARNING: [Synth 8-5640] Port 'wr_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:566]
+WARNING: [Synth 8-5640] Port 'rd_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:566]
+INFO: [Synth 8-3491] module 'fifo_4k' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/fifo_4k_stub.vhdl:5' bound to instance 'fifo_arp2' of component 'fifo_4k' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1002]
+INFO: [Synth 8-3491] module 'tx_pkt_arp' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp.vhd:27' bound to instance 'tx_arp' of component 'tx_pkt_arp' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1016]
+INFO: [Synth 8-638] synthesizing module 'tx_pkt_arp' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp.vhd:45]
+INFO: [Synth 8-3491] module 'crc' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/crc.vhd:34' bound to instance 'fcs' of component 'crc' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp.vhd:99]
+WARNING: [Synth 8-614] signal 'arp_request_mac' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp.vhd:118]
+WARNING: [Synth 8-614] signal 'arp_request_ip' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'tx_pkt_arp' (8#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp.vhd:45]
+INFO: [Synth 8-3491] module 'tx_pkt_icmp' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_icmp.vhd:29' bound to instance 'tx_icmp' of component 'tx_pkt_icmp' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1033]
+INFO: [Synth 8-638] synthesizing module 'tx_pkt_icmp' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_icmp.vhd:54]
+INFO: [Synth 8-3491] module 'crc' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/crc.vhd:34' bound to instance 'crc_inst' of component 'crc' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_icmp.vhd:150]
+INFO: [Synth 8-256] done synthesizing module 'tx_pkt_icmp' (9#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_icmp.vhd:54]
+WARNING: [Synth 8-5640] Port 'rd_data_count' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:549]
+INFO: [Synth 8-3491] module 'fifo_1k' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/fifo_1k_stub.vhdl:5' bound to instance 'fifo_1k_eth2' of component 'fifo_1k' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1071]
+INFO: [Synth 8-638] synthesizing module 'fifo_1k' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/fifo_1k_stub.vhdl:22]
+WARNING: [Synth 8-5640] Port 'wr_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:566]
+WARNING: [Synth 8-5640] Port 'rd_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:566]
+INFO: [Synth 8-3491] module 'fifo_4k' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/fifo_4k_stub.vhdl:5' bound to instance 'fifo_arp' of component 'fifo_4k' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1088]
+WARNING: [Synth 8-5640] Port 'wr_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:566]
+WARNING: [Synth 8-5640] Port 'rd_rst_busy' is missing in component declaration [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:566]
+INFO: [Synth 8-3491] module 'fifo_4k' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/.Xil/Vivado-5098-pc/realtime/fifo_4k_stub.vhdl:5' bound to instance 'fifo_icmp' of component 'fifo_4k' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1102]
+INFO: [Synth 8-3491] module 'arbiter' declared at '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/arbiter.vhd:29' bound to instance 'arb_inst' of component 'arbiter' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1130]
+INFO: [Synth 8-638] synthesizing module 'arbiter' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/arbiter.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'arbiter' (10#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/arbiter.vhd:57]
+WARNING: [Synth 8-614] signal 'set_arp2_done' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1164]
+WARNING: [Synth 8-614] signal 'clr_arp2_done' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1164]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rx1_proto'. This will prevent further optimization [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:839]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rx1_pkt'. This will prevent further optimization [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:853]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rx2_proto'. This will prevent further optimization [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:885]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ETH2_RX'. This will prevent further optimization [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:899]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PKT2_25701'. This will prevent further optimization [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:947]
+INFO: [Synth 8-256] done synthesizing module 'canda_spiso_fd' (11#1) [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:112]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2338.246 ; gain = 0.000 ; free physical = 5497 ; free virtual = 11597
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2338.246 ; gain = 0.000 ; free physical = 5501 ; free virtual = 11602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2338.246 ; gain = 0.000 ; free physical = 5501 ; free virtual = 11602
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2338.246 ; gain = 0.000 ; free physical = 5491 ; free virtual = 11592
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_1k/fifo_1k/fifo_1k_in_context.xdc] for cell 'fifo_1k_eth2'
+Finished Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_1k/fifo_1k/fifo_1k_in_context.xdc] for cell 'fifo_1k_eth2'
+Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Finished Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'ila2_inst'
+Finished Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'ila2_inst'
+Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo2_4k/fifo2_4k/fifo2_4k_in_context.xdc] for cell 'FIFO_ETH2_RX_25701'
+Finished Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo2_4k/fifo2_4k/fifo2_4k_in_context.xdc] for cell 'FIFO_ETH2_RX_25701'
+Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'FIFO_PKT2_25701'
+Finished Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'FIFO_PKT2_25701'
+Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_arp2'
+Finished Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_arp2'
+Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_arp'
+Finished Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_arp'
+Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_icmp'
+Finished Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_icmp'
+Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/constrs_1/new/maket_op.xdc]
+Finished Parsing XDC File [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/constrs_1/new/maket_op.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/constrs_1/new/maket_op.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/canda_spiso_fd_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/canda_spiso_fd_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2370.148 ; gain = 0.000 ; free physical = 5365 ; free virtual = 11465
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2370.148 ; gain = 0.000 ; free physical = 5365 ; free virtual = 11465
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5478 ; free virtual = 11578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5478 ; free virtual = 11578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_vhdl.gen/sources_1/ip/pll/pll/pll_in_context.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for fifo_1k_eth2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pll_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila2_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for FIFO_ETH2_RX_25701. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for FIFO_PKT2_25701. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fifo_arp. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fifo_arp2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fifo_icmp. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5478 ; free virtual = 11578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'mdio_cfg'
+INFO: [Synth 8-802] inferred FSM for state register 'State_cfg_reg' in module 'mdio_cfg'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'rx_packets'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'MII_RX2_PKT'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'tx_pkt_icmp'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'arbiter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 st_idle |                              001 |                               00
+              st_reading |                              010 |                               01
+              st_writing |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'mdio_cfg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    st_0 |                   00000000000001 |                            00000
+                    st_1 |                   00000000000010 |                            00001
+                    st_2 |                   00000000000100 |                            00010
+                    st_3 |                   00000000001000 |                            00011
+                    st_4 |                   00000000010000 |                            00100
+                    st_5 |                   00000000100000 |                            00101
+                    st_6 |                   00000001000000 |                            00110
+                    st_7 |                   00000010000000 |                            00111
+                    st_8 |                   00000100000000 |                            01000
+                    st_9 |                   00001000000000 |                            01001
+                   st_10 |                   00010000000000 |                            01010
+                   st_11 |                   00100000000000 |                            01011
+                   st_12 |                   01000000000000 |                            01100
+                   st_13 |                   10000000000000 |                            01101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_cfg_reg' using encoding 'one-hot' in module 'mdio_cfg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                             0000
+                 eth_hdr |                              001 |                             0001
+                  ip_hdr |                              010 |                             0010
+                 udp_hdr |                              011 |                             0011
+                apo_data |                              100 |                             0110
+                 arp_hdr |                              101 |                             0100
+             process_arp |                              110 |                             0101
+                wait_end |                              111 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'rx_packets'
+WARNING: [Synth 8-327] inferring latch for variable 'set_apo_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:411]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_apo_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:412]
+WARNING: [Synth 8-327] inferring latch for variable 'set_icmp_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:407]
+WARNING: [Synth 8-327] inferring latch for variable 'set_arp_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:403]
+WARNING: [Synth 8-327] inferring latch for variable 'set_arp_oper_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:593]
+WARNING: [Synth 8-327] inferring latch for variable 'arp_oper_set_val_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:592]
+WARNING: [Synth 8-327] inferring latch for variable 'eth_type_rx_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:443]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_icmp_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:408]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_arp_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/rx_packets.vhd:404]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                             0000
+                 eth_hdr |                              001 |                             0001
+                  ip_hdr |                              010 |                             0010
+                 udp_hdr |                              011 |                             0011
+           pkt25701_data |                              100 |                             0110
+                 arp_hdr |                              101 |                             0100
+                wait_end |                              110 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'MII_RX2_PKT'
+WARNING: [Synth 8-327] inferring latch for variable 'set_arp_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:427]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_arp_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:428]
+WARNING: [Synth 8-327] inferring latch for variable 'rx_udp_dlen_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:529]
+WARNING: [Synth 8-327] inferring latch for variable 'set_pkt25701_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:415]
+WARNING: [Synth 8-327] inferring latch for variable 'eth_type_rx_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:466]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_pkt25701_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/MII_RX2_PKT.vhd:416]
+WARNING: [Synth 8-327] inferring latch for variable 'set_send_I_have_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:121]
+WARNING: [Synth 8-327] inferring latch for variable 'dst_mac_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:122]
+WARNING: [Synth 8-327] inferring latch for variable 'src_mac_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:123]
+WARNING: [Synth 8-327] inferring latch for variable 'arp_hdr_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp2.vhd:124]
+WARNING: [Synth 8-327] inferring latch for variable 'set_send_I_have_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp.vhd:121]
+WARNING: [Synth 8-327] inferring latch for variable 'target_mac_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp.vhd:122]
+WARNING: [Synth 8-327] inferring latch for variable 'target_ip_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_arp.vhd:123]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                              000
+               write_hdr |                               01 |                              001
+               write_fcs |                               10 |                              011
+                  end_tx |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'tx_pkt_icmp'
+WARNING: [Synth 8-327] inferring latch for variable 'set_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_icmp.vhd:163]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/tx_pkt_icmp.vhd:163]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   st_s1 |                              001 |                              001
+                   st_s2 |                              010 |                              010
+                   st_s3 |                              011 |                              011
+                   st_s4 |                              100 |                              100
+                   st_s5 |                              101 |                              101
+                  st_igp |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'arb_state_reg' using encoding 'sequential' in module 'arbiter'
+WARNING: [Synth 8-327] inferring latch for variable 'set_apo_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1180]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_apo_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1180]
+WARNING: [Synth 8-327] inferring latch for variable 'set_arp_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1176]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_arp_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1176]
+WARNING: [Synth 8-327] inferring latch for variable 'set_arp2_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1188]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_arp2_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1188]
+WARNING: [Synth 8-327] inferring latch for variable 'set_pkt25701_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1184]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_pkt25701_done_t_reg' [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1184]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5462 ; free virtual = 11557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   6 Input   19 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 5     
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 7     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
+	   3 Input      1 Bit         XORs := 24    
+	   5 Input      1 Bit         XORs := 16    
+	   7 Input      1 Bit         XORs := 28    
+	   6 Input      1 Bit         XORs := 28    
+	   4 Input      1 Bit         XORs := 4     
+	   9 Input      1 Bit         XORs := 12    
+	  10 Input      1 Bit         XORs := 8     
+	  12 Input      1 Bit         XORs := 4     
+	   8 Input      1 Bit         XORs := 4     
++---Registers : 
+	              512 Bit    Registers := 1     
+	              224 Bit    Registers := 1     
+	              144 Bit    Registers := 1     
+	               48 Bit    Registers := 13    
+	               32 Bit    Registers := 16    
+	               19 Bit    Registers := 2     
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 30    
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 31    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 99    
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 2     
+	  30 Input  224 Bit        Muxes := 1     
+	  20 Input  144 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 2     
+	  16 Input   48 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	  13 Input   32 Bit        Muxes := 4     
+	   4 Input   16 Bit        Muxes := 1     
+	  10 Input   16 Bit        Muxes := 7     
+	  16 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 2     
+	  14 Input   16 Bit        Muxes := 2     
+	   6 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 1     
+	   6 Input   11 Bit        Muxes := 2     
+	   3 Input   11 Bit        Muxes := 1     
+	  51 Input   11 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 10    
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 6     
+	   6 Input    8 Bit        Muxes := 2     
+	  32 Input    8 Bit        Muxes := 1     
+	  57 Input    5 Bit        Muxes := 1     
+	  14 Input    5 Bit        Muxes := 2     
+	   7 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 20    
+	   3 Input    4 Bit        Muxes := 6     
+	  32 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 7     
+	   2 Input    3 Bit        Muxes := 4     
+	  12 Input    3 Bit        Muxes := 1     
+	  51 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	  30 Input    3 Bit        Muxes := 1     
+	  52 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 11    
+	   3 Input    2 Bit        Muxes := 2     
+	   8 Input    2 Bit        Muxes := 2     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 147   
+	  52 Input    1 Bit        Muxes := 13    
+	   6 Input    1 Bit        Muxes := 16    
+	   3 Input    1 Bit        Muxes := 18    
+	   4 Input    1 Bit        Muxes := 36    
+	  57 Input    1 Bit        Muxes := 8     
+	  58 Input    1 Bit        Muxes := 4     
+	  16 Input    1 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 23    
+	  13 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 3     
+	  10 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 26    
+	   7 Input    1 Bit        Muxes := 13    
+	   5 Input    1 Bit        Muxes := 3     
+	  12 Input    1 Bit        Muxes := 2     
+	  51 Input    1 Bit        Muxes := 3     
+	  56 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5418 ; free virtual = 11529
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5308 ; free virtual = 11418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5305 ; free virtual = 11415
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5305 ; free virtual = 11415
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:1180]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.srcs/sources_1/new/canda_spiso_fd.vhd:975]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5304 ; free virtual = 11414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5304 ; free virtual = 11414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5304 ; free virtual = 11414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5304 ; free virtual = 11414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5304 ; free virtual = 11414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5304 ; free virtual = 11414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |fifo_1k       |         1|
+|2     |pll           |         1|
+|3     |fifo_4k       |         4|
+|4     |fifo2_4k      |         1|
+|5     |ila_1         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |fifo2_4k_bbox |     1|
+|2     |fifo_1k_bbox  |     1|
+|3     |fifo_4k_bbox  |     4|
+|7     |ila_1_bbox    |     1|
+|8     |pll_bbox      |     1|
+|9     |BUFG          |     5|
+|10    |CARRY4        |   100|
+|11    |LUT1          |    49|
+|12    |LUT2          |   258|
+|13    |LUT3          |   184|
+|14    |LUT4          |   259|
+|15    |LUT5          |   387|
+|16    |LUT6          |  1152|
+|17    |MUXF7         |    92|
+|18    |MUXF8         |    18|
+|19    |FDPE          |   128|
+|20    |FDRE          |  2680|
+|21    |FDSE          |    28|
+|22    |LD            |   454|
+|23    |LDC           |     8|
+|24    |LDP           |     6|
+|25    |IBUF          |    20|
+|26    |IOBUF         |     2|
+|27    |OBUF          |    31|
+|28    |OBUFT         |     3|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 2370.148 ; gain = 31.902 ; free physical = 5304 ; free virtual = 11414
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2370.148 ; gain = 0.000 ; free physical = 5355 ; free virtual = 11465
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 2370.156 ; gain = 31.902 ; free physical = 5355 ; free virtual = 11465
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2370.156 ; gain = 0.000 ; free physical = 5429 ; free virtual = 11539
+INFO: [Netlist 29-17] Analyzing 680 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 3 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2370.156 ; gain = 0.000 ; free physical = 5371 ; free virtual = 11481
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 470 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  LD => LDCE: 454 instances
+  LDC => LDCE: 5 instances
+  LDC => LDCE (inverted pins: G): 3 instances
+  LDP => LDPE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+86 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:08 . Memory (MB): peak = 2370.156 ; gain = 32.023 ; free physical = 5524 ; free virtual = 11634
+INFO: [Common 17-1381] The checkpoint '/home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/canda_spiso_fd.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file canda_spiso_fd_utilization_synth.rpt -pb canda_spiso_fd_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 19 12:47:58 2021...

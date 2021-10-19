@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 19 12:46:41 2021
+# Process ID: 5098
+# Current directory: /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1
+# Command line: vivado -log canda_spiso_fd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source canda_spiso_fd.tcl
+# Log file: /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/canda_spiso_fd.vds
+# Journal file: /home/master/FPGA_proj/CANDA_SPI_SO_FD/canda_spiso_fd.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source canda_spiso_fd.tcl -notrace

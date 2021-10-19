@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX2
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x000F4D03    Sep 29 09:59:45 2021    /home/master/FPGA_proj/canda_vhdl/canda_vhdl.runs/impl_1/canda.bit
